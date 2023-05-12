@@ -1,55 +1,39 @@
 package com.softtek.modelo.herencia2;
 
-public class Vehiculos {
+public class Vehiculo {private String marca;
     private String modelo;
-    private String marca;
     private int anio;
-    private double precio;
+    private int velocidad;
 
-    public Vehiculos(String modelo, String marca, int anio, double precio) {
-        this.modelo = modelo;
+    public Vehiculo(String marca, String modelo, int anio) {
         this.marca = marca;
-        this.anio = anio;
-        this.precio = precio;
-    }
-
-    public String getModelo() {
-        return modelo;
-    }
-
-    public void setModelo(String modelo) {
         this.modelo = modelo;
-    }
-
-    public String getMarca() {
-        return marca;
-    }
-
-    public void setMarca(String marca) {
-        this.marca = marca;
-    }
-
-    public int getAnio() {
-        return anio;
-    }
-
-    public void setAnio(int anio) {
         this.anio = anio;
+        this.velocidad = 0;
     }
 
-    public double getPrecio() {
-        return precio;
+    public int acelerar(int incremento) {
+        this.velocidad += incremento;
+        return this.velocidad;
     }
 
-    public void setPrecio(double precio) {
-        this.precio = precio;
+    public int frenar(int decremento) {
+        if (this.velocidad - decremento < 0) {
+            this.velocidad = 0;
+        } else {
+            this.velocidad -= decremento;
+        }
+        return this.velocidad;
     }
 
-    public void arrancar() {
-        System.out.println("El vehículo ha arrancado");
+
+    public String mostrarDatos() {
+        return  "marca='" + marca + '\'' +
+                ", modelo='" + modelo + '\'' +
+                ", anio=" + anio +
+                ", velocidad=" + velocidad ;
     }
 
-    public void detener() {
-        System.out.println("El vehículo se ha detenido");
-    }
+
 }
+

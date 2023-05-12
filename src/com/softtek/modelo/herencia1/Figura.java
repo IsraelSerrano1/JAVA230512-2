@@ -1,4 +1,4 @@
-package com.softtek.modelo;
+package com.softtek.modelo.herencia1;
 
 public class Figura {
     private int coordenadaX;
@@ -8,8 +8,19 @@ public class Figura {
         coordenadaX = x;
         coordenadaY = y;
     }
-
+    public int getCoordenadaX() {
+        return coordenadaX;
+    }
+    public void setCoordenadaX(int coordenadaX) {
+        this.coordenadaX = coordenadaX;
+    }
+    public int getCoordenadaY() {
+        return coordenadaY;
+    }
+    public void setCoordenadaY(int coordenadaY) {
+        this.coordenadaY = coordenadaY;
+    }
     public String posicion() {
-        return "Posición: (" + coordenadaX + ", " + coordenadaY + ")";
+        return "(" + coordenadaX + ", " + coordenadaY + ")";
     }
 }
