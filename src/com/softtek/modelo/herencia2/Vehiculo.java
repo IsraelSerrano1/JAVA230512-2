@@ -12,16 +12,16 @@ public class Vehiculo {private String marca;
         this.velocidad = 0;
     }
 
-    public int acelerar(int incremento) {
-        this.velocidad += incremento;
+    public int acelerar(int aumento) {
+        this.velocidad += aumento;
         return this.velocidad;
     }
 
-    public int frenar(int decremento) {
-        if (this.velocidad - decremento < 0) {
+    public int frenar(int descuento) {
+        if (this.velocidad - descuento < 0) {
             this.velocidad = 0;
         } else {
-            this.velocidad -= decremento;
+            this.velocidad -= descuento;
         }
         return this.velocidad;
     }

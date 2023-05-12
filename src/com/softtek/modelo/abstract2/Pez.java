@@ -1,0 +1,14 @@
+package com.softtek.modelo.abstract2;
+
+public class Pez extends Animal {
+
+    @Override
+    public String comer() {
+        return "Comiendo...";
+    }
+
+    @Override
+    public String moverse() {
+        return "Moviendo...";
+    }
+}

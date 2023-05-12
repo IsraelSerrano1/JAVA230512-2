@@ -11,13 +11,6 @@ public abstract class Planta {
         this.edad = edad;
     }
 
-    public abstract void regar(int cantidad, int tiempo);
-
-    public void crecer() {
-        altura += 10;
-        edad++;
-    }
-
     public String getNombre() {
         return nombre;
     }
@@ -29,4 +22,12 @@ public abstract class Planta {
     public int getEdad() {
         return edad;
     }
+    public abstract void regar(int cantidad, int tiempo);
+
+    public void crecer() {
+        altura += 10;
+        edad++;
+    }
+
+
 }
