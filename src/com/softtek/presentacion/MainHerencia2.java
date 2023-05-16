@@ -1,16 +1,13 @@
 package com.softtek.presentacion;
 
-import com.softtek.modelo.herencia2.Avion;
-import com.softtek.modelo.herencia2.Barco;
-import com.softtek.modelo.herencia2.Coche;
-import com.softtek.modelo.herencia2.Tren;
+import com.softtek.modelo.herencia2.*;
 
 public class MainHerencia2 {
     public static void main(String[] args) {
-        Coche coche = new Coche("Renault", "Fuego", 1985, 5);
-        Barco barco = new Barco("Galeón", "390", 2016,11.76);
-        Avion avion = new Avion("Airbus", "A320", 2020,4);
-        Tren tren = new Tren("Renfe", "Talgo", 1975, 6);
+        Vehiculo coche = new Coche("Renault", "Fuego", 1985, 5);
+        Vehiculo barco = new Barco("Galeón", "390", 2016,11.76);
+        Vehiculo avion = new Avion("Airbus", "A320", 2020,4);
+        Vehiculo tren = new Tren("Renfe", "Talgo", 1975, 6);
 
         // Llamar a métodos de cada objeto
 

@@ -14,6 +14,7 @@ public class MainConsultaAPI {
         //Mostrar la palabra curso
         String[] palabrasTexto = texto.split(" ");
         System.out.println(palabrasTexto[2]);
+        System.out.println(texto.substring(texto.indexOf("curso "), texto.indexOf(" curso") + " curso".length()));
         //Mostrar la posición de la letra c
         System.out.println(texto.indexOf("c"));
         //Devolver la longitud de la cadena

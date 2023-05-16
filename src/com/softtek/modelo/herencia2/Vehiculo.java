@@ -1,9 +1,10 @@
 package com.softtek.modelo.herencia2;
 
-public class Vehiculo {private String marca;
-    private String modelo;
-    private int anio;
-    private int velocidad;
+public class Vehiculo {
+    protected String marca;
+    protected String modelo;
+    protected int anio;
+    protected int velocidad;
 
     public Vehiculo(String marca, String modelo, int anio) {
         this.marca = marca;

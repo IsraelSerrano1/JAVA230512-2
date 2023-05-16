@@ -1,8 +1,8 @@
 package com.softtek.modelo.herencia1;
 
 public class Figura {
-    private int coordenadaX;
-    private int coordenadaY;
+    protected int coordenadaX;
+    protected int coordenadaY;
 
     public Figura(int x, int y) {
         coordenadaX = x;
